@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGuide | Contact & About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .contact-hero { background-color: #212529; color: white; padding: 60px 0; }
+        .social-icon { font-size: 1.5rem; transition: 0.3s; color: #0d6efd; }
+        .social-icon:hover { color: #0a58ca; transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">FIT<span class="text-primary">GUIDE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Workouts</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="beginner.html">Beginner</a></li>
+                            <li><a class="dropdown-item" href="intermediate.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Supplements</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="supp-basics.html">Basics</a></li>
+                            <li><a class="dropdown-item" href="supp-recovery.html">Recovery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="nutrition.html">Nutrition</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-hero text-center mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Get In Touch</h1>
+            <p class="lead">Have questions about your fitness journey? We are here to help.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-5">
+            <div class="col-md-5">
+                <h2 class="fw-bold mb-4">About FitGuide</h2>
+                <p>Our mission is to provide science-based workout routines and transparent supplement guidance to help individuals reach their peak physical potential.</p>
+                
+                <h4 class="mt-4">Follow Our Progress</h4>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+
+                <div class="mt-5 p-4 bg-white shadow-sm rounded border-start border-primary border-4">
+                    <h5>Office Hours</h5>
+                    <p class="mb-0 text-muted">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    <p class="text-muted">Location: Fitness Plaza, Digital City</p>
+                </div>
+            </div>
+
+            <section class="py-5 bg-light col-md-7">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-md-8">
+        <h2 class="text-center mb-4">Send a Message</h2>
+
+        <form id="contactForm" novalidate>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" id="firstName" class="form-control" placeholder="First Name">
+              <small class="text-danger" id="firstNameError"></small>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+              <small class="text-danger" id="lastNameError"></small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" id="phone" class="form-control" placeholder="Phone Number">
+              <small class="text-danger" id="phoneError"></small>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="email" id="email" class="form-control" placeholder="Email Address">
+              <small class="text-danger" id="emailError"></small>
+            </div>
+          </div>
+
+          <div class="mb-3">
+              <select id="subject" class="form-select">
+                <option value="">Select Subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+              </select>
+              <small class="text-danger" id="subjectError"></small>
+          </div>
+
+          <div class="mb-3">
+            <textarea id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+            <small class="text-danger" id="messageError"></small>
+          </div>
+
+          <button class="btn btn-primary w-100" type="submit">Send Message</button>
+
+          <div class="alert alert-success mt-3 d-none" id="successMsg">
+            ✅ Message sent successfully!
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+            
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 FitGuide Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let isValid = true;
+
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+  const phone=document.getElementById("phone");
+
+  document.querySelectorAll("small").forEach(el => el.innerText = "");
+
+  if (firstName.value.trim() === "") {
+    document.getElementById("firstNameError").innerText = "First name is required";
+    isValid = false;
+  }
+
+  if (lastName.value.trim() === "") {
+    document.getElementById("lastNameError").innerText = "Last name is required";
+    isValid = false;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email.value)) {
+    document.getElementById("emailError").innerText = "Enter a valid email address";
+    isValid = false;
+  }
+  const phonePattern = /^\d{10}$/;
+  if(!phonePattern.test(phone.value)){
+    document.getElementById("phoneError").innerText="Enter a valid 10-digit phone number";
+    isValid=false;
+  }
+
+  if (message.value.trim().length < 30) {
+    document.getElementById("messageError").innerText =
+      "Message must be at least 30 characters";
+    isValid = false;
+  }
+
+  if (isValid) {
+    document.getElementById("successMsg").classList.remove("d-none");
+    this.reset();
+
+    setTimeout(() => {
+      document.getElementById("successMsg").classList.add("d-none");
+    }, 4000);
+  }
+});
+</script>
+</html>
